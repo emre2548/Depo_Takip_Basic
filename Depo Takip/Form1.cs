@@ -33,13 +33,13 @@ namespace Depo_Takip
             cmbItemNameAdd.Items.Add("Tornavida");
             cmbItemNameAdd.Items.Add("Anahtar");
             cmbItemNameAdd.Items.Add("Vida");
-            //cmbItemNameAdd.Items.Add("Poşet");
+            cmbItemNameAdd.Items.Add("Poşet");
 
             cmbItemNameReduce.Items.Add("Kereste");
             cmbItemNameReduce.Items.Add("Tornavida");
             cmbItemNameReduce.Items.Add("Anahtar");
             cmbItemNameReduce.Items.Add("Vida");
-            //cmbItemNameReduce.Items.Add("Poşet");
+            cmbItemNameReduce.Items.Add("Poşet");
         }
     }
 }
