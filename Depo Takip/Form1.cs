@@ -19,8 +19,8 @@ namespace Depo_Takip
 
 
 
-        //SqlConnection connectDB = new SqlConnection(@"Data Source = ASUS;Initial Catalog=depotakip;Integrated Security=True");
-        SqlConnection connectDB = new SqlConnection(@"Server=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\depotakip\depotakip.mdf;Integrated Security=True");
+        SqlConnection connectDB = new SqlConnection(@"Data Source = ASUS;Initial Catalog=depotakip;Integrated Security=True");
+        //SqlConnection connectDB = new SqlConnection(@"Server=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\depotakip\depotakip.mdf;Integrated Security=True");
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -217,6 +217,7 @@ namespace Depo_Takip
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+          
             int sec = dataGridView1.SelectedCells[0].RowIndex;
 
             string StokKodu = dataGridView1.Rows[sec].Cells[0].Value.ToString();
